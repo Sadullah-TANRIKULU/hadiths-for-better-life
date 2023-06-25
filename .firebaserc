@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "fire-9b023": {
+      "hosting": {
+        "hadiths-for-better-life": [
+          "fire-9b023"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "fire-9b023"
+  }
+}

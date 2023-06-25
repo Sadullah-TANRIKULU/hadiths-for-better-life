@@ -1,0 +1,9 @@
+{
+  "hosting": [
+    {
+      "target": "hadiths-for-better-life",
+      "source": ".",
+      "frameworksBackend": {}
+    }
+  ]
+}

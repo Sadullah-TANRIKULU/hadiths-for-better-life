@@ -1,0 +1,5 @@
+issue1: when refresh the page, navigates to login page altough user has already logged in and never turn back to home
+issue2: home page styling needed
+issue3: home page hadith cards needed
+issue4: write a native mobile app with NativeScript
+
