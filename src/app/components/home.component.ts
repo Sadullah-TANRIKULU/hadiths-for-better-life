@@ -18,13 +18,13 @@ import { RtdbService } from '../shared/rtdb.service';
     <div class="current-user" >
       <p>Online User: {{currentUser?.displayName}}</p>
     </div>
-  <div *ngIf="hadithList">
+  <div *ngIf="hadithList" class="main-section" >
     <ul *ngFor="let hadith of hadithList" >
     
       <li class="li-update-form">
         <input type="text" #updatehadith [value]="hadith.payload.val().hadith" />
         <button (click)="updateItem(hadith.key, updatehadith.value)">Update</button>
-        <button (click)="deleteItem(hadith.key)">Delete</button>
+        <!-- <button (click)="deleteItem(hadith.key)">Delete</button> -->
         
         <mat-card class="example-card">
           <mat-card-header>
@@ -38,14 +38,15 @@ import { RtdbService } from '../shared/rtdb.service';
             {{ hadith.payload.val().hadith }}
           </mat-card-content>
         </mat-card>
+
       </li>
+
     </ul>
+  </div>
+  <div class="home-main">
     <input class="new-hadith-input" type="text" #newHadith />
-    <button class="btn-add" (click)="addItem(newHadith)">Add</button>
-    <button (click)="deleteEverything()">Delete All</button>
-    <div class="home-main">
-      <br><br><br><br>
-    </div>
+    <button class="btn-add primary" (click)="addItem(newHadith)">Add</button>
+    <!-- <button (click)="deleteEverything()">Delete All</button> -->
   </div>
 
   `,
